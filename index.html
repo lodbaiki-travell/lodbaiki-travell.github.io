@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="По Оке на лодке — маршруты для моторных лодок, идеи для ночёвок у воды и снаряжение для речных походов.">
+  <meta name="theme-color" content="#1b3a2d">
+  <title>По Оке на лодке — маршруты и речные походы</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 20V5m-6 6 6-6 6 6"/></symbol>
+    <symbol id="icon-open" viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 10-7 10S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m4 17 4-3 3 2 4-5 5 4"/></symbol>
+    <symbol id="icon-expand" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-6 6M10 20H4v-6m0 6 6-6"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-boat" viewBox="0 0 24 24"><path d="M3 12h18l-3 5H6l-3-5Zm5 0V7h7l3 5M2 21c2 0 2-1.5 4-1.5S8 21 10 21s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/></symbol>
+    <symbol id="icon-motor" viewBox="0 0 24 24"><path d="M8 4h10l2 2v4H6V6l2-2Zm5 6v7m-5 3h5v-3h4M6 8H3v5"/></symbol>
+    <symbol id="icon-tent" viewBox="0 0 24 24"><path d="M2 20h20L12 4 2 20Zm6 0 4-6 4 6M10 3l2 3 2-3"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">К основному содержанию</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#home" aria-label="По Оке на лодке — главная">
+        <img src="assets/favicon.png" alt="" width="44" height="44">
+        <span>По Оке<br>на лодке</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню" hidden>
+        <svg class="icon menu-open-icon" aria-hidden="true"><use href="#icon-menu"/></svg>
+        <svg class="icon menu-close-icon" aria-hidden="true"><use href="#icon-close"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <a href="#home" aria-current="location">Главная</a>
+        <a href="#routes">Маршруты</a>
+        <a href="#trips">Наши походы</a>
+        <a href="#gallery">Фотогалерея</a>
+        <a href="#gear">Снаряжение</a>
+        <a class="nav-contact" href="#contacts">Контакты <svg class="icon" aria-hidden="true"><use href="#icon-open"/></svg></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="home-title">
+      <picture class="hero-media">
+        <source media="(max-width: 640px)" srcset="assets/images/oka-hero-mobile.webp">
+        <img src="assets/images/oka-hero.webp" alt="" width="1536" height="1024" fetchpriority="high">
+      </picture>
+      <div class="wrap hero-inner">
+        <p class="hero-kicker">Путеводитель по реке</p>
+        <h1 id="home-title">По Оке <span>на лодке</span></h1>
+        <p class="hero-intro">Маршруты на выходные, ночёвки на берегу и всё, что пригодится в лодочном походе.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#routes">Выбрать маршрут <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          <a class="button button-glass" href="#gallery"><svg class="icon" aria-hidden="true"><use href="#icon-image"/></svg> Смотреть галерею</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section routes-section" id="routes" aria-labelledby="routes-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 id="routes-title">Маршруты по Оке</h2>
+          <p>Предварительные варианты для дневных выездов и ночёвок на берегу.</p>
+        </div>
+        <div class="route-grid">
+          <article class="route-card">
+            <div class="route-media">
+              <img src="assets/images/tarusa.webp" alt="Песчаная коса на широком изгибе реки" width="764" height="508" loading="lazy">
+              <span class="route-tag">Предварительный</span>
+            </div>
+            <div class="route-body">
+              <h3>Таруса — Поленово</h3>
+              <ul class="route-meta">
+                <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg> На день</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> Средняя Ока</li>
+              </ul>
+              <p>Выход на воду у Тарусы, переход к берегу у Поленова и возвращение в тот же день.</p>
+              <details class="route-details">
+                <summary>Подробнее <svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+                <p>Перед поездкой выберите место спуска и проверьте, где можно причалить у Поленова. Оставьте время на возвращение против течения.</p>
+              </details>
+            </div>
+          </article>
+          <article class="route-card">
+            <div class="route-media">
+              <img src="assets/images/serpukhov.webp" alt="Сосны на берегу реки напротив песчаного обрыва" width="764" height="508" loading="lazy">
+              <span class="route-tag">Предварительный</span>
+            </div>
+            <div class="route-body">
+              <h3>Серпухов — Кашира</h3>
+              <ul class="route-meta">
+                <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg> На выходные</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> Подмосковье</li>
+              </ul>
+              <p>Переход вниз по реке между двумя городами с ночёвкой в палатке.</p>
+              <details class="route-details">
+                <summary>Подробнее <svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+                <p>Наметьте разрешённую стоянку между городами. Заранее решите, как заберёте лодку в Кашире или вернётесь к месту старта.</p>
+              </details>
+            </div>
+          </article>
+          <article class="route-card">
+            <div class="route-media">
+              <img src="assets/images/kasimov.webp" alt="Утренний туман над рекой и золотые деревья на берегу" width="764" height="508" loading="lazy">
+              <span class="route-tag">Предварительный</span>
+            </div>
+            <div class="route-body">
+              <h3>Ока у Касимова</h3>
+              <ul class="route-meta">
+                <li><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg> На день</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg> Рязанская область</li>
+              </ul>
+              <p>Прогулка по окрестностям Касимова с остановкой на берегу и возвратом к месту старта.</p>
+              <details class="route-details">
+                <summary>Подробнее <svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+                <p>Наметьте доступный берег для остановки и точку разворота. Перед выездом уточните условия спуска и проверьте прогноз погоды.</p>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trips-section" id="trips" aria-labelledby="trips-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 id="trips-title">Наши походы</h2>
+          <p>Здесь будут отчёты о выездах. Пока можно посмотреть пример похода с ночёвкой.</p>
+        </div>
+        <article class="trip-card">
+          <div class="trip-media">
+            <img src="assets/images/overnight.webp" alt="Оранжевая палатка и лодка на берегу реки на закате" width="764" height="508" loading="lazy">
+          </div>
+          <div class="trip-body">
+            <h3>Ночёвка у воды</h3>
+            <p>Короткий переход на моторной лодке, вечер в палатке и завтрак на берегу перед обратной дорогой.</p>
+            <details class="trip-details">
+              <summary>Открыть программу <svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg></summary>
+              <ol>
+                <li>Днём спустите лодку и доберитесь до выбранной стоянки.</li>
+                <li>До темноты закрепите лодку и поставьте палатку.</li>
+                <li>Утром соберите лагерь и вернитесь к месту спуска.</li>
+              </ol>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 id="gallery-title">Фотогалерея</h2>
+          <p>Лодка, песчаные берега и рассвет на воде. Иллюстрации созданы с помощью ИИ по мотивам пейзажей Оки.</p>
+        </div>
+        <div class="gallery-grid">
+          <a class="gallery-tile" href="assets/images/boat.webp">
+            <img src="assets/images/boat.webp" alt="Алюминиевая моторная лодка у берега" width="764" height="508" loading="lazy">
+            <span class="gallery-label">Лодка у берега</span>
+            <svg class="icon gallery-expand" aria-hidden="true"><use href="#icon-expand"/></svg>
+          </a>
+          <a class="gallery-tile" href="assets/images/sandbank.webp">
+            <img src="assets/images/sandbank.webp" alt="Песчаный берег и сосны в солнечный день" width="764" height="508" loading="lazy">
+            <span class="gallery-label">Песчаный берег</span>
+            <svg class="icon gallery-expand" aria-hidden="true"><use href="#icon-expand"/></svg>
+          </a>
+          <a class="gallery-tile" href="assets/images/camp.webp">
+            <img src="assets/images/camp.webp" alt="Палатка с фонарём на берегу в сумерках" width="764" height="508" loading="lazy">
+            <span class="gallery-label">Лагерь в сумерках</span>
+            <svg class="icon gallery-expand" aria-hidden="true"><use href="#icon-expand"/></svg>
+          </a>
+          <a class="gallery-tile" href="assets/images/sunrise.webp">
+            <img src="assets/images/sunrise.webp" alt="Низкий туман и отражение восходящего солнца в реке" width="764" height="508" loading="lazy">
+            <span class="gallery-label">Рассвет на реке</span>
+            <svg class="icon gallery-expand" aria-hidden="true"><use href="#icon-expand"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gear-section" id="gear" aria-labelledby="gear-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 id="gear-title">Лодки, моторы и снаряжение</h2>
+          <p>Короткий список для подготовки к выходу на воду и ночёвке на берегу.</p>
+        </div>
+        <div class="gear-grid">
+          <article class="gear-card">
+            <svg class="icon gear-icon" aria-hidden="true"><use href="#icon-boat"/></svg>
+            <h3>Лодка</h3>
+            <ul>
+              <li>Проверьте корпус, вёсла и крепления.</li>
+              <li>Возьмите якорь, швартовочный конец и ремкомплект.</li>
+              <li>Подберите спасжилет каждому участнику.</li>
+            </ul>
+          </article>
+          <article class="gear-card">
+            <svg class="icon gear-icon" aria-hidden="true"><use href="#icon-motor"/></svg>
+            <h3>Мотор</h3>
+            <ul>
+              <li>Проверьте крепление мотора и винт.</li>
+              <li>Рассчитайте запас топлива на весь переход.</li>
+              <li>Возьмите трос аварийной остановки и инструмент.</li>
+            </ul>
+          </article>
+          <article class="gear-card">
+            <svg class="icon gear-icon" aria-hidden="true"><use href="#icon-tent"/></svg>
+            <h3>Стоянка</h3>
+            <ul>
+              <li>Упакуйте палатку, спальник и сухую одежду.</li>
+              <li>Возьмите аптечку, питьевую воду и фонарь.</li>
+              <li>Держите телефон и документы в гермомешке.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts-section" id="contacts" aria-labelledby="contacts-title">
+      <div class="wrap contacts-inner">
+        <div>
+          <h2 id="contacts-title">Контакты</h2>
+          <p>Предложить маршрут или сообщить о неточности можно в репозитории проекта на GitHub.</p>
+        </div>
+        <a class="button button-gold" href="https://github.com/zhirnovdp-crypto/oka-boat-travel">Открыть репозиторий <svg class="icon" aria-hidden="true"><use href="#icon-open"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand footer-brand" href="#home" aria-label="По Оке на лодке — главная">
+        <img src="assets/favicon.png" alt="" width="38" height="38">
+        <span>По Оке на лодке</span>
+      </a>
+      <a class="back-to-top" href="#home">К началу <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"/></svg></a>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox-content">
+      <h2 class="visually-hidden" id="lightbox-title">Просмотр галереи</h2>
+      <button type="button" class="lightbox-button lightbox-close" aria-label="Закрыть галерею" autofocus>
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"/></svg>
+      </button>
+      <figure>
+        <img class="lightbox-image" src="assets/images/boat.webp" alt="" width="764" height="508" loading="lazy">
+        <figcaption class="lightbox-caption" aria-live="polite"></figcaption>
+      </figure>
+      <div class="lightbox-controls">
+        <button type="button" class="lightbox-button lightbox-prev" aria-label="Предыдущее изображение">
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </button>
+        <span class="lightbox-counter"></span>
+        <button type="button" class="lightbox-button lightbox-next" aria-label="Следующее изображение">
+          <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+        </button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
